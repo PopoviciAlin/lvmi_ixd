@@ -1,7 +1,11 @@
 /* NECLASIFICAT */
 .custom-transition {
-    transition: 0.5s;
+    transition: 0.3s;
 }
+
+/* Albastru original: #007bff*/
+/* Rosu (Craciun): #E3001E*/
+/* Verde (Craciun): ##00873E*/
 
 * {
     -webkit-user-select: none; /* Safari */
@@ -19,18 +23,27 @@
     box-shadow: 5px 5px 10px gray;
 }
 
-#theme-toggle {
-    transition: 0.5s;
-    background-color: #007bff;
+#theme-toggle, #snowstormButton {
+    transition: 0.3s;
+    background-color: #E3001E;
     width: 100%; /* Set the button width to 100% of #continut */
     height: 50px;
     box-shadow: 5px 5px 10px gray;
     border: none;
     border-radius: 2em;
-  }
+}
+
+#theme-toggle:hover, #snowstormButton:hover {
+    transform: scale(0.95);
+}
+
+#theme-toggle:active, #snowstormButton:active {
+    transform: scale(0.8);
+}
 
 ::marker {
-    color: #007bff;
+    color: #E3001E;
+    transition: 0.3s;
 }
 
 
@@ -40,33 +53,33 @@
 /* UNIVERSAL */
 body {
     background-color: #dee2e6;
-    transition: color 0.5s;
+    transition: color 0.3s;
     margin: 0;
     margin-top: 100px;
 }
 
 /* Custom Scrollbar*/
 ::-webkit-scrollbar {
-    transition: 0.5s;
+    transition: 0.3s;
     background: white;
     width: 20px;
 }
   
 ::-webkit-scrollbar-track {
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: transparent;
 }
   
 ::-webkit-scrollbar-thumb {
     background-color: #d6dee1;
-    transition: 0.5s;
+    transition: 0.3s;
     border-radius: 2em;
     border: 6px solid transparent;
     background-clip: content-box;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: #a8bbbf;
 }
 
@@ -76,6 +89,7 @@ iframe {
     aspect-ratio: 16/9;
     border-radius: 2em;
     filter: drop-shadow(5px 5px 5px #000000a9);
+    outline: solid #E3001E 5px;
 }
 
 #centeredvideo {
@@ -86,7 +100,8 @@ iframe {
 
 #boldblue {
     font-weight: 900;
-    color: #007bff;    
+    color: #E3001E;
+    
 }
 
 
@@ -98,7 +113,7 @@ iframe {
     font-family: "Quicksand";
     font-size: clamp(1rem, 15vw, 7rem);
     font-weight: 900;
-    transition: all 0.5s;
+    transition: all 0.3s;
     text-shadow: 5px 5px 10px gray;
     text-align: center;
     margin: 25px;
@@ -114,15 +129,31 @@ p { /* Paragraf / Continut */
     font-family: "Quicksand";
     font-size: clamp(18px, 3vw, 28px);
     margin: 15px;
-    transition: color 0.5s;
+    transition: 0.3s;
 }
 
+#caveat {
+    font-family: 'Caveat';
+}
+
+#scris_stanga {
+    text-align: right;
+}
+
+#semnatura {
+    text-align: right;
+    font-family: "Caveat";
+}
+
+
+
 p a { /* Linkuri continute in paragrafe */
-    color: #007bff;
+    color: #E3001E;
+
 }
 
 #indisponibil {
-    color: red;
+    color: #E3001E;
 }
 
 #socialmedia {
@@ -132,7 +163,7 @@ p a { /* Linkuri continute in paragrafe */
 #socialmedia_link {
     width: 100px;
     margin: 15px 15px 0 15px;
-    transition: 0.5s;
+    transition: 0.3s;
     filter: drop-shadow(3px 3px 5px #777777);
 }
 
@@ -152,7 +183,7 @@ p a { /* Linkuri continute in paragrafe */
     display: flex;
     justify-content: right;
     padding: 10px;
-    box-shadow: 0px 5px 25px 5px #007bffb4;
+    box-shadow: 0px 5px 25px 5px #E3001E;
 
     background-color: white;
 
@@ -165,6 +196,7 @@ p a { /* Linkuri continute in paragrafe */
     justify-content: center;
     align-items: center;
     margin: 0;
+    transition: color 0.3s !important;
 }
 
 /* Linkurile din DIV */
@@ -176,22 +208,15 @@ p a { /* Linkuri continute in paragrafe */
     text-decoration: none;
     padding: 10px;
     border-radius: 2em;
-    transition: 0.2s;
+    transition: all 0.3s;
     transition-property: font-size, color, background-color;
 }
 
 /* Ce se intampla cand utilizatorul tine cursorul peste link */
 #linkuri a:hover {
     text-shadow: none;
-    background-color: #007bff8f;
+    background-color: #e3001e6c;
     font-weight: 900;
-}
-
-/* Imaginea din partea stanga a barii de navigare */
-#favicon_img {
-    transition: 0.5s;
-    filter: drop-shadow(3px 3px 5px #777777);
-    height: 100%;
 }
 
 
@@ -201,7 +226,7 @@ p a { /* Linkuri continute in paragrafe */
 /* Continut */
 /* "#continut" reprezinta intreg DIV-ul ce contine continut*/
 #continut {   
-    transition: 0.5s;
+    transition: 0.3s;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -209,6 +234,20 @@ p a { /* Linkuri continute in paragrafe */
     margin: 25px 5vw 25px 5vw;
     padding: 10px;
     box-shadow: 5px 5px 10px gray;
+    z-index: 100;
+}
+
+#continut_special {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 243, 243);
+    border-radius: 2em;
+    margin: 25px 5vw 25px 5vw;
+    padding: 10px;
+    box-shadow: 5px 5px 10px gray;
+    outline: 2px solid red;
+    z-index: 100;
 }
 
 /* FAQ */
@@ -265,7 +304,7 @@ details[open] summary ~ #socialmedia_link {
     position: relative;
     flex: 1;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     margin: 0 2%;
     filter: drop-shadow(5px 5px 5px #000000a9);
     transform: translateZ(0)
@@ -278,7 +317,7 @@ details[open] summary ~ #socialmedia_link {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: 0.3s;
 }
   
 .box:hover {
@@ -317,7 +356,7 @@ details[open] summary ~ #socialmedia_link {
 
     /* Navigare */
     #navigare {
-        transition: all 0.5;
+        transition: all 0.3;
         height: 35px;
     }
 

@@ -1,7 +1,11 @@
 /* NECLASIFICAT */
 .custom-transition {
-    transition: 0.5s;
+    transition: 0.3s;
 }
+
+/* Albastru original: #007bff*/
+/* Rosu (Craciun): #E3001E*/
+/* Verde (Craciun): #00873E*/
 
 * {
     -webkit-user-select: none; /* Safari */
@@ -12,23 +16,33 @@
 #continut_configurari {
     display: flex;
     flex-direction: column;
-    background-color: #212529;
+    background-color: white;
     border-radius: 2em;
     margin: 25px 5vw 25px 5vw;
     padding: 10px;
+    box-shadow: 5px 5px 10px gray;
 }
 
-#theme-toggle {
-    transition: 0.5s;
-    background-color: #007bff;
-    width: 100%;
+#theme-toggle, #snowstormButton {
+    transition: 0.3s;
+    background-color: #00873E;
+    width: 100%; /* Set the button width to 100% of #continut */
     height: 50px;
     border: none;
     border-radius: 2em;
-  }
+}
+
+#theme-toggle:hover, #snowstormButton:hover {
+    transform: scale(0.95);
+}
+
+#theme-toggle:active, #snowstormButton:active {
+    transform: scale(0.8);
+}
 
 ::marker {
-    color: #007bff;
+    color: #00873E;
+    transition: 0.3s;
 }
 
 
@@ -37,35 +51,35 @@
 
 /* UNIVERSAL */
 body {
-    background-color: black;
-    transition: color 0.5s;
+    background-color: #000000;
+    transition: color 0.3s;
     margin: 0;
     margin-top: 100px;
 }
 
 /* Custom Scrollbar*/
 ::-webkit-scrollbar {
-    transition: 0.5s;
+    transition: 0.3s;
     background: #212529;
     width: 20px;
 }
   
 ::-webkit-scrollbar-track {
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: transparent;
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: #535353;
-    transition: 0.5s;
+    background-color: #414141;
+    transition: 0.3s;
     border-radius: 2em;
     border: 6px solid transparent;
     background-clip: content-box;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    transition: 0.5s;
-    background-color: #6d6d6d;
+    transition: 0.3s;
+    background-color: #555555;
 }
 
 iframe {
@@ -73,6 +87,8 @@ iframe {
     width: 75%;
     aspect-ratio: 16/9;
     border-radius: 2em;
+    filter: drop-shadow(5px 5px 5px #000000a9);
+    outline: solid #00873E 5px;
 }
 
 #centeredvideo {
@@ -83,7 +99,8 @@ iframe {
 
 #boldblue {
     font-weight: 900;
-    color: #007bff;    
+    color: #00873E;
+    
 }
 
 
@@ -95,10 +112,10 @@ iframe {
     font-family: "Quicksand";
     font-size: clamp(1rem, 15vw, 7rem);
     font-weight: 900;
-    transition: all 0.5s;
+    transition: all 0.3s;
+    text-shadow: 5px 5px 10px gray;
     text-align: center;
     margin: 25px;
-    color: white;
 }
 
 h1 { /* Titlu principal */
@@ -112,16 +129,32 @@ p { /* Paragraf / Continut */
     font-family: "Quicksand";
     font-size: clamp(18px, 3vw, 28px);
     margin: 15px;
-    transition: color 0.5s;
+    transition: 0.3s;
+    color: white;
+}
+
+#caveat {
+    font-family: 'Caveat';
+}
+
+#scris_stanga {
+    text-align: right;
+    color: white;
+}
+
+#semnatura {
+    text-align: right;
+    font-family: "Caveat";
     color: white;
 }
 
 p a { /* Linkuri continute in paragrafe */
-    color: #007bff;
+    color: #00873E;
+
 }
 
 #indisponibil {
-    color: red;
+    color: #00873E;
 }
 
 #socialmedia {
@@ -131,7 +164,7 @@ p a { /* Linkuri continute in paragrafe */
 #socialmedia_link {
     width: 100px;
     margin: 15px 15px 0 15px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 
@@ -144,16 +177,15 @@ p a { /* Linkuri continute in paragrafe */
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1030;
 
     font-family: "Quicksand";
     height: 50px;
     display: flex;
     justify-content: right;
     padding: 10px;
-    box-shadow: 0px 5px 25px 5px #007bffb4;
+    box-shadow: 0px 5px 25px 5px #00873E;
 
-    background-color: #212529;
+    background-color: #212529 !important;
 
     z-index: 10000;
 }
@@ -165,32 +197,27 @@ p a { /* Linkuri continute in paragrafe */
     align-items: center;
     margin: 0;
     color: white;
+    transition: color 0.3s !important;
 }
 
 /* Linkurile din DIV */
 #linkuri a {
-    z-index: 1000;
     color: white;
+    text-shadow: 5px 5px 10px gray;
     font-size: clamp(1rem, 1vw, 3rem);
     margin: 0 15px;
     text-decoration: none;
     padding: 10px;
     border-radius: 2em;
-    transition: all 0.2s;
+    transition: all 0.3s;
     transition-property: font-size, color, background-color;
 }
 
 /* Ce se intampla cand utilizatorul tine cursorul peste link */
 #linkuri a:hover {
     text-shadow: none;
-    background-color: #007bff8f;
+    background-color: #00873f59;
     font-weight: 900;
-}
-
-/* Imaginea din partea stanga a barii de navigare */
-#favicon_img {
-    transition: 0.5s;
-    height: 100%;
 }
 
 
@@ -200,13 +227,24 @@ p a { /* Linkuri continute in paragrafe */
 /* Continut */
 /* "#continut" reprezinta intreg DIV-ul ce contine continut*/
 #continut {   
-    transition: 0.5s;
+    transition: 0.3s;
     display: flex;
     flex-direction: column;
-    background-color: #212529;
+    background-color: #212529 !important;
     border-radius: 2em;
     margin: 25px 5vw 25px 5vw;
     padding: 10px;
+}
+
+#continut_special {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    background-color: #001600;
+    border-radius: 2em;
+    margin: 25px 5vw 25px 5vw;
+    padding: 10px;
+    outline: 2px solid #004d24;
 }
 
 /* FAQ */
@@ -215,12 +253,12 @@ details {
 }
 
 summary {
+    color: white;
     font-family: "Quicksand";
     font-size: clamp(24px, 3vw, 36px);
     font-weight: 900;
     border-bottom: 2px solid #999999;
     cursor: pointer;
-    color: white;
 }
 
 #sub-details {
@@ -228,6 +266,10 @@ summary {
 }
 
 details[open] summary ~ * {
+    animation: open 0.3s ease-in-out;
+}
+
+details[open] summary ~ #socialmedia_link {
     animation: open 0.3s ease-in-out;
 }
   
@@ -260,8 +302,9 @@ details[open] summary ~ * {
     position: relative;
     flex: 1;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     margin: 0 2%;
+    filter: drop-shadow(5px 5px 5px #000000a9);
     transform: translateZ(0)
 }
   
@@ -272,7 +315,7 @@ details[open] summary ~ * {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: 0.3s;
 }
   
 .box:hover {
@@ -311,7 +354,7 @@ details[open] summary ~ * {
 
     /* Navigare */
     #navigare {
-        transition: all 0.5;
+        transition: all 0.3;
         height: 35px;
     }
 

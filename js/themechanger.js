@@ -25,10 +25,10 @@ function applyTheme(theme) {
         
         if (theme === 'light') {
             themeText.textContent = 'Alege latura întunecată';
-            otherText.textContent = 'Întunericul preia controlul: website-ul se transformă în modul întunecat, aducând o atmosferă misterioasă și elegantă.';
+            otherText.textContent = 'Întunericul preia controlul • Website-ul se transformă în modul întunecat, aducând o atmosferă misterioasă și elegantă.';
         } else {
             themeText.textContent = 'Alege latura luminoasă';
-            otherText.textContent = 'Lumina strălucește: website-ul se schimbă în modul luminos, creând o atmosferă vibrantă și energică.';
+            otherText.textContent = 'Lumina strălucește • Website-ul se schimbă în modul luminos, creând o atmosferă vibrantă și energică.';
         }
     }, 100);
 }
