@@ -7,12 +7,6 @@
 /* Rosu (Craciun): #E3001E*/
 /* Verde (Craciun): ##00873E*/
 
-* {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-}
-
 #continut_configurari {
     display: flex;
     flex-direction: column;
@@ -117,6 +111,10 @@ iframe {
     text-shadow: 5px 5px 10px gray;
     text-align: center;
     margin: 25px;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 h1 { /* Titlu principal */
@@ -188,6 +186,10 @@ p a { /* Linkuri continute in paragrafe */
     background-color: white;
 
     z-index: 10000;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 /* DIV-ul link-urilor */
@@ -261,6 +263,10 @@ summary {
     font-weight: 900;
     border-bottom: 2px solid #999999;
     cursor: pointer;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 #sub-details {
