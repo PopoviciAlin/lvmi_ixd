@@ -2,6 +2,12 @@
 .custom-transition {
     transition: 0.3s;
 }
+* {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 
 /* Albastru original: #007bff*/
 /* Rosu (Craciun): #E3001E*/
@@ -110,10 +116,10 @@ iframe {
     text-shadow: 5px 5px 10px gray;
     text-align: center;
     margin: 25px;
+}
 
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+#subtitlu {
+    text-align: center;
 }
 
 h1 { /* Titlu principal */
@@ -121,10 +127,7 @@ h1 { /* Titlu principal */
     font-size: clamp(32px, 3vw, 48px);
     margin: 15px;
     color: white;
-
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    text-align: left;
 }
 
 p { /* Paragraf / Continut */
@@ -169,6 +172,10 @@ p a { /* Linkuri continute in paragrafe */
     transition: 0.3s;
 }
 
+#details_despre {
+    text-decoration: underline 3px white;
+}
+
 
 
 
@@ -178,22 +185,15 @@ p a { /* Linkuri continute in paragrafe */
 #navigare {
     position: fixed;
     top: 0;
-    width: 100%;
-
+    width: 99%;
     font-family: "Quicksand";
     height: 50px;
     display: flex;
     justify-content: right;
     padding: 10px;
     box-shadow: 0px 5px 25px 5px #00873E;
-
     background-color: #212529 !important;
-
     z-index: 10000;
-
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 }
 
 /* DIV-ul link-urilor */
@@ -259,9 +259,6 @@ details {
 }
 
 summary {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
     color: white;
     font-family: "Quicksand";
     font-size: clamp(24px, 3vw, 36px);
@@ -341,6 +338,7 @@ details[open] summary ~ #socialmedia_link {
 @media screen and (max-width: 600px) {
     #navigare {
         justify-content: center;
+        width: 100%;
     }
 
     iframe {

@@ -3,6 +3,12 @@
     transition: 0.3s;
 }
 
+* {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 /* Albastru original: #007bff*/
 /* Rosu (Craciun): #E3001E*/
 /* Verde (Craciun): ##00873E*/
@@ -111,16 +117,17 @@ iframe {
     text-shadow: 5px 5px 10px gray;
     text-align: center;
     margin: 25px;
+}
 
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+#subtitlu {
+    text-align: center;
 }
 
 h1 { /* Titlu principal */
     font-family: "Quicksand";
     font-size: clamp(32px, 3vw, 48px);
     margin: 15px;
+    text-align: left;
 }
 
 p { /* Paragraf / Continut */
@@ -165,6 +172,10 @@ p a { /* Linkuri continute in paragrafe */
     filter: drop-shadow(3px 3px 5px #777777);
 }
 
+#details_despre {
+    text-decoration: underline 3px black;
+}
+
 
 
 
@@ -174,22 +185,15 @@ p a { /* Linkuri continute in paragrafe */
 #navigare {
     position: fixed;
     top: 0;
-    width: 100%;
-
+    width: 99%;
     font-family: "Quicksand";
     height: 50px;
     display: flex;
     justify-content: right;
     padding: 10px;
     box-shadow: 0px 5px 25px 5px #E3001E;
-
     background-color: white;
-
     z-index: 10000;
-
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 }
 
 /* DIV-ul link-urilor */
@@ -263,10 +267,6 @@ summary {
     font-weight: 900;
     border-bottom: 2px solid #999999;
     cursor: pointer;
-
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 }
 
 #sub-details {
@@ -340,6 +340,7 @@ details[open] summary ~ #socialmedia_link {
 @media screen and (max-width: 600px) {
     #navigare {
         justify-content: center;
+        width: 100%;
     }
 
     iframe {
