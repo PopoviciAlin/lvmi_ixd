@@ -26,7 +26,7 @@
 #theme-toggle, #snowstormButton {
     transition: 0.3s;
     background-color: #E3001E;
-    width: 100%; /* Set the button width to 100% of #continut */
+    width: 100%;
     height: 50px;
     box-shadow: 5px 5px 10px gray;
     border: none;
@@ -121,6 +121,7 @@ iframe {
 
 #subtitlu {
     text-align: center;
+    text-decoration: underline 3px black;
 }
 
 h1 { /* Titlu principal */
