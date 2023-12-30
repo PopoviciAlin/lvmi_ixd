@@ -25,7 +25,7 @@
 
 #theme-toggle, #snowstormButton {
     transition: 0.3s;
-    background-color: #E3001E;
+    background-color: #007bff;
     width: 100%; /* Set the button width to 100% of #continut */
     height: 50px;
     box-shadow: 5px 5px 10px gray;
@@ -42,7 +42,7 @@
 }
 
 ::marker {
-    color: #E3001E;
+    color: #007bff;
     transition: 0.3s;
 }
 
@@ -89,7 +89,7 @@ iframe {
     aspect-ratio: 16/9;
     border-radius: 2em;
     filter: drop-shadow(5px 5px 5px #000000a9);
-    outline: solid #E3001E 5px;
+    outline: solid #007bff 5px;
 }
 
 #centeredvideo {
@@ -100,7 +100,7 @@ iframe {
 
 #boldblue {
     font-weight: 900;
-    color: #E3001E;
+    color: #007bff;
     
 }
 
@@ -153,7 +153,7 @@ p { /* Paragraf / Continut */
 
 
 p a { /* Linkuri continute in paragrafe */
-    color: #E3001E;
+    color: #007bff;
 
 }
 
@@ -191,7 +191,7 @@ p a { /* Linkuri continute in paragrafe */
     display: flex;
     justify-content: right;
     padding: 10px;
-    box-shadow: 0px 5px 25px 5px #E3001E;
+    box-shadow: 0px 5px 25px 5px #007bff;
     background-color: white;
     z-index: 10000;
 }
@@ -221,7 +221,7 @@ p a { /* Linkuri continute in paragrafe */
 /* Ce se intampla cand utilizatorul tine cursorul peste link */
 #linkuri a:hover {
     text-shadow: none;
-    background-color: #e3001e6c;
+    background-color: #007bff50;
     font-weight: 900;
 }
 
@@ -252,7 +252,7 @@ p a { /* Linkuri continute in paragrafe */
     margin: 25px 5vw 25px 5vw;
     padding: 10px;
     box-shadow: 5px 5px 10px gray;
-    outline: 2px solid red;
+    outline: 2px solid #007bff;
     z-index: 100;
 }
 

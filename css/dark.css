@@ -25,7 +25,7 @@
 
 #theme-toggle, #snowstormButton {
     transition: 0.3s;
-    background-color: #00873E;
+    background-color: #007bff;
     width: 100%; /* Set the button width to 100% of #continut */
     height: 50px;
     border: none;
@@ -41,7 +41,7 @@
 }
 
 ::marker {
-    color: #00873E;
+    color: #007bff;
     transition: 0.3s;
 }
 
@@ -88,7 +88,7 @@ iframe {
     aspect-ratio: 16/9;
     border-radius: 2em;
     filter: drop-shadow(5px 5px 5px #000000a9);
-    outline: solid #00873E 5px;
+    outline: solid #007bff 5px;
 }
 
 #centeredvideo {
@@ -99,7 +99,7 @@ iframe {
 
 #boldblue {
     font-weight: 900;
-    color: #00873E;
+    color: #007bff;
     
 }
 
@@ -154,12 +154,12 @@ p { /* Paragraf / Continut */
 }
 
 p a { /* Linkuri continute in paragrafe */
-    color: #00873E;
+    color: #007bff;
 
 }
 
 #indisponibil {
-    color: #00873E;
+    color: red;
 }
 
 #socialmedia {
@@ -191,7 +191,7 @@ p a { /* Linkuri continute in paragrafe */
     display: flex;
     justify-content: right;
     padding: 10px;
-    box-shadow: 0px 5px 25px 5px #00873E;
+    box-shadow: 0px 5px 25px 5px #007bff;
     background-color: #212529 !important;
     z-index: 10000;
 }
@@ -222,7 +222,7 @@ p a { /* Linkuri continute in paragrafe */
 /* Ce se intampla cand utilizatorul tine cursorul peste link */
 #linkuri a:hover {
     text-shadow: none;
-    background-color: #00873f59;
+    background-color: #007bff8c;
     font-weight: 900;
 }
 
